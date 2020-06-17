@@ -5,8 +5,20 @@ function getRandomInteger (minimum, maximum) {
   return Math.floor(Math.random() * (maximum - minimum)) + minimum
 }
 
+// hello it's me
+
+// June 17
+
+// cool I am also me!
+
+
+
+let s = {name: 'Tony', address: 'Sussex Drive'}
+
+
+
 // Povided Arrays
-const nouns = ['dragons', 'toasters']
+const nouns = ['dragons', 'toasters', 'cars']
 
 const verbs = ['walked', 'ran']
 
@@ -79,3 +91,56 @@ const closings = ['with extra cheese', 'the end']
 
 // Submission
 // Submit your GitHub repo URL through the LMS.
+
+// Pseudo code:
+
+// add the words to arrays
+
+// Create a function that creates a ranmdom sentence
+// Does this function require any parameters: no
+// Does this function need to return anything: yes a new random sentence
+// how do you create a random sentence?
+
+// Create a function that outputs some text
+// Does function require any parameters: yes to text to output
+// Does this function need to return anything: no
+
+// execute a loop 10 times
+// each cycle of the loop creates a new random sentence and then output it
+
+
+function createRandomSentence(){
+  const randomSentence = openings[ getRandomInteger(0, openings.length - 1) ] + ' ' +
+
+  // random adjective
+  adjectives[getRandomInteger(0, adjectives.length - 1)] + ' ' 
+
+  
+  // random noun
+  // add random pro_noun
+  // add random verb
+  // add random adverb // maybe a comma not a space
+  // add random ending // period at the end
+  
+  // return this new random sentence
+
+  return randomSentence
+
+}
+
+function outputSentence( sentence){
+  console.log(sentence)
+}
+
+const numberOfSentences = 10
+
+for(let i = 0; i < numberOfSentences; i++){
+  // let randomSentence = createRandomSentence()
+  // outputSentence(randomSentence)
+
+  outputSentence(createRandomSentence())
+}
+
+
+
+
